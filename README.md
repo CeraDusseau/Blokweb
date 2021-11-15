@@ -39,12 +39,12 @@ hier je focus (kies uit responsive óf surface plane)
 https://www.videoland.com/inloggen
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
-<img src="images/Eerste_pagina.png" width="375px" alt="De eerste pagina">
+Home page 
+<img src="images/Eerste_pagina.PNG" width="375px" alt="De eerste pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/Tweede_pagina.png" width="375px" alt="De tweede pagina">
+Zoek page 
+<img src="images/tweede_pagina.PNG" width="375px" alt="De tweede pagina">
  
 </details>
 
