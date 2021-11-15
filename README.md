@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Auteur:
-Cera Dusseau
+Sanne 't Hooft (vervangen door jouw naam)
 
 #### Je startniveau:
-blauw
+hier je startniveau (kies uit zwart, rood óf blauw)
 
 #### Je focus:
-surface plane
+hier je focus (kies uit responsive óf surface plane)
  
 </details>
 
@@ -36,15 +36,15 @@ surface plane
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-https://www.videoland.com/inloggen
+link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="images/Eerste_pagina.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/Tweede_pagina.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
