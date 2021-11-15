@@ -52,7 +52,7 @@ Zoek page
 
 ## Breakdownschets (week 1)
 
-<details>
+<details open>
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
