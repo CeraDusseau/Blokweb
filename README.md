@@ -58,8 +58,8 @@ hier de naam van de pagina
 ### de hele pagina: 
 <img src="images/Helepagina.png" width="375px" alt="breakdown van de hele pagina">
 
-### dynamisch deel (menu): 
-<img src="images/Menu.png" width="375px" alt="breakdown van een dynamisch deel">
+### dynamisch deel (specifieke informatie over een film of serie): 
+<img src="images/specifiekepagina.png" width="375px" alt="breakdown van een dynamisch deel">
 
 
 
