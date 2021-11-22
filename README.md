@@ -36,15 +36,15 @@ surface plane
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+<a href="https://www.videoland.com/nl/"></a>
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
+Home page
 <img src="images/Eerste_pagina.PNG" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/tweede_pagina.PNG" width="375px" alt="omschrijving van de pagina">
+Informatie pagina
+<img src="images/specifiekepagina.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -58,9 +58,11 @@ hier de naam van de pagina
 ### de hele pagina: 
 <img src="images/Helepagina.png" width="375px" alt="breakdown van de hele pagina">
 
-### dynamisch deel (specifieke informatie over een film of serie): 
-<img src="images/specifiekepagina.png" width="375px" alt="breakdown van een dynamisch deel">
+### dynamisch deel (bijv menu): 
+<img src="images/Menu.png" width="375px" alt="breakdown van een dynamisch deel">
 
+### dynamisch deel (bijv menu): 
+<img src="images/specifiekepagina.png" width="375px" alt="breakdown van een dynamisch deel">
 
 
 </details>

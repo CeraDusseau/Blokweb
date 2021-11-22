@@ -1,5 +1,66 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
+:root {
+  --basis-kleur-zwart: #000;
+  --kleur-wit: #fff;
+
+}
+
+body {
+  margin: 0;
+  background-color: var(--basis-kleur-zwart);
+  font-family: sans-serif;
+}
+
+h1 {
+  color: var(--basis-kleur-zwart);
+  font-size: 16px;
+}
+
+
+nav {
+  color: var(--kleur-wit);
+  position: sticky;
+}
+
+nav>img :first-of-type {
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 10px;
+  height: 10px;
+}
+
+nav>ul {
+  color: var(--kleur-wit);
+  display: flex;
+}
+
+h2 {
+  color: var(--kleur-wit);
+  font-size: 14px;
+}
+
+h3 {
+  color: var(--kleur-wit);
+  font-size: 14px;
+}
+
+p {
+  color: var(--kleur-wit);
+  font-size: 12px;
+}
+
+a {
+  color: var(--kleur-wit);
+  font-size: 12px;
+  text-decoration: none;
+}
