@@ -71,7 +71,7 @@ nav {
   position: relative;
 }
 
-nav>ul {
+nav>ul>li {
   color: var(--kleur-wit);
   display: flex;
   justify-content: center;
