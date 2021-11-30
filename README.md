@@ -77,25 +77,23 @@ Informatie pagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik vond de HTML goed gaan, ik heb tot zover geen DIV of Class gebruikt. Ik merk wel dat ik de CSS lastig vind en dat dat iets langzamer gaat omdat ik toch wel tegen veel dingen aanloop.
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
+student 1: "ik zou graag willen leren hoe je icoontjes aan een website toevoegd."
+student 2: "ik zou graag willen leren hoe ik een hamburger menu maak."
+student 3: "ik wil graag weten hoe je een foto carrousel maakt."   
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
+- punt 1 Je kan icoontjes aan de <A> toevoegen door gewoon een img in de A te zetten
+- punt 2 ik heb een opdracht toegestuurd gekregen waar ik even naar moet kijken.
+- punt 3 Ik zou als eerst een 'neppe' variant maken. 
 - ...
 
 </details>
