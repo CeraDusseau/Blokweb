@@ -20,57 +20,13 @@
 
 
 
-
-
-/***********/
-/*header*/
-/***********/
-header {
-  padding: .5em .5em;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-}
-
-header a {
-  color: black;
-  text-decoration: none;
+@font-face {
+  font-family: gothambold-webfont;
+  src: url(gothambold-webfont.woff);
 }
 
 
 
-
-
-/************/
-/* het logo */
-/************/
-header>img:first-of-type {
-  display: flex;
-  justify-self: center;
-
-
-  display: grid;
-  grid-template-columns: min-content min-content;
-  grid-gap: .25em;
-  align-items: center;
-}
-
-
-
-
-
-
-/***********/
-/*Main*/
-/***********/
-Main {
-  margin: 0;
-
-
-}
 
 
 /***********/
@@ -79,44 +35,7 @@ Main {
 body {
   margin: 0;
   background-color: var(--basis-kleur-zwart);
-  font-family: sans-serif;
-}
 
-button {
-  font: inherit;
-  cursor: pointer;
-}
-
-
-
-
-/***********/
-/*letter styling*/
-/***********/
-h1 {
-  color: var(--basis-kleur-zwart);
-  font-size: 16px;
-}
-
-h2 {
-  color: var(--kleur-wit);
-  font-size: 14px;
-}
-
-h3 {
-  color: var(--kleur-wit);
-  font-size: 14px;
-}
-
-p {
-  color: var(--kleur-wit);
-  font-size: 12px;
-}
-
-a {
-  color: var(--kleur-wit);
-  font-size: 12px;
-  text-decoration: none;
 }
 
 
@@ -124,15 +43,16 @@ a {
 
 
 /***********/
-/*NAVIGATIE*/
+/*NAVIGATIE */
 /***********/
 nav {
   color: var(--kleur-wit);
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
-  background-color: wheat;
   color: var(--kleur-wit);
   position: fixed;
   margin: 0;
@@ -147,19 +67,59 @@ nav ul {
 
 }
 
+nav button:first-of-type {
+  width: 1.5em;
+  height: 1.5em;
+  color: white;
+  background-color: black;
+  border: none;
+  font-size: 1.5em;
+
+}
+
+nav.toonMenu button:first-of-type {
+  display: none;
+}
+
+nav button:nth-of-type(2) {
+  border-radius: 1em;
+  color: white;
+  border: none;
+  background-color: gray;
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  right: -11em;
+  top: 0.5em;
+  z-index: 100;
+  display: none;
+
+}
+
+nav.toonMenu button:nth-of-type(2) {
+  display: block;
+}
+
+
+
 nav.toonMenu ul {
   transform: translateX(0%);
+
 
 }
 
 nav li {
+  margin: .2em;
+  padding: 0.3em;
+  width: 100%;
+  font-size: 1em;
 
-  margin: 0;
-  padding: 0;
 }
 
 nav a {
   color: white;
+  font-size: 1em;
+  font-weight: normal;
   gap: .25em;
   padding: .25em 1em;
   border-top: solid 1px var(--menu-border-color);
@@ -174,14 +134,6 @@ nav a.active {
   font-weight: bold;
 }
 
-nav button {
-  position: relative;
-  width: 3em;
-  height: 1.5em;
-  left: 0;
-  top: 0;
-  z-index: 100;
-}
 
 
 
@@ -191,7 +143,6 @@ nav button {
 /***********/
 @media (min-width:64em) {
   nav {
-
     order: 0;
     justify-self: center;
 
@@ -222,15 +173,91 @@ nav button {
 
 
 
+/***********/
+/*Header*/
+/***********/
+header {
+  background-color: var(--basis-kleur-zwart);
+  padding: .5em .5em;
+  display: flex;
+  position: sticky;
+  top: 0;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+}
+
+
 
 
 
 /***********/
-/*secties*/
+/*Main -> article 1 */
+/***********/
+article:first-of-type {
+  position: relative;
+
+}
+
+/* Toestemming van Sanne */
+article:first-of-type div {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: .2em .4em;
+  background-image: linear-gradient(rgb(0 0 0 / 0), black);
+
+}
+
+
+main article img:first-of-type {
+  width: 24em;
+  height: 18em;
+}
+
+h2 {
+  color: white;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+h3 {
+  color: white;
+  font-size: 1em;
+  line-height: 1em;
+}
+
+
+
+
+/***********/
+/*Section 2*/
+/***********/
+
+
+
+
+/***********/
+/*Section 3*/
+/***********/
+section:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+/***********/
+/*Section 4*/
 /***********/
 section {
   display: flex;
-  margin: 18px;
+  margin: 1.12em;
   padding: .2em;
 }
 
@@ -244,8 +271,7 @@ section>a>img {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column-reverse;
-  width: 107px;
-  height: 160px;
+  width: 6.68em;
 }
 
 
@@ -253,52 +279,21 @@ section>a>img {
 
 
 /***********/
-/*article*/
+/*letter styling*/
 /***********/
-article>section>img {
-  width: 100%;
-  height: 80%;
-  padding: .2em;
-
-}
-
-article>a>img:first-of-type(1) {
-  width: auto;
-  height: 125;
-  padding: .1em;
+h1 {
+  color: var(--basis-kleur-zwart);
+  font-size: 1em;
 }
 
 
-article:nth-of-type(3) {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: auto;
-  height: 125;
-  padding: .2em;
-}
-
-
-article>section:nth-of-type(3) {
-  position: absolute;
-  left: 14em;
-  right: 12em;
-  top: 10em;
-
-  width: auto;
-  height: 50;
-}
-
-
-
-
-
-/***********/
-/*TIME*/
-/***********/
-time {
+p {
   color: var(--kleur-wit);
-  font-size: 12px;
+  font-size: .75em;
+}
+
+a {
+  color: var(--kleur-wit);
+  font-size: .75em;
+  text-decoration: none;
 }
