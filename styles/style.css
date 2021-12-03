@@ -149,7 +149,7 @@ nav a.active {
 /***********/
 /*NAVIGATIE als de min width 64em is*/
 /***********/
-@media (min-width:64em) {
+@media (min-width:60em) {
   nav {
     order: 0;
     justify-self: center;
@@ -172,7 +172,27 @@ nav a.active {
 
   nav a {
     border: none;
+    color: white;
 
+  }
+
+  /*Bern heeft me hiermee geholen*/
+  nav a::after {
+    content: "";
+    text-decoration: none;
+    height: 1px;
+    width: 100%;
+    display: block;
+    background-color: currentColor;
+    transition: transform .3s;
+    transform-origin: bottom left;
+    transform: scaleX(0);
+
+  }
+
+  nav a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
   }
 }
 
