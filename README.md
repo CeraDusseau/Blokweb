@@ -80,12 +80,13 @@ Informatie pagina
 Ik vond de HTML goed gaan, ik heb tot zover geen DIV of Class gebruikt. Ik merk wel dat ik de CSS lastig vind en dat dat iets langzamer gaat omdat ik toch wel tegen veel dingen aanloop.
 
 
+
+
 ### Agenda voor meeting
 samen met je groepje opstellen
 student 1: "ik zou graag willen leren hoe je icoontjes aan een website toevoegd."
 student 2: "ik zou graag willen leren hoe ik een hamburger menu maak."
 student 3: "ik wil graag weten hoe je een foto carrousel maakt."   
-
 
 
 ### Verslag van meeting
@@ -108,17 +109,15 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Tijdens week twee heb ik me vooral gefocust op de CSS en een beetje op de Javascript. Ik merk dat ik Css lastig vind maar zodra de code werkt maakt dat veel goed. Ik heb deze week een hamburger menu werkend gemaakt en ben begonnen aan de tweede pagina zodat ik hierna alleen nog maar de CSS en Javascript hoef te doen
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
+student 1: "Ik zou deze week graag willen leren hoe ik een scrollbar maak voor foto's zodat mijn website bij een grotere layout meer foto's laat zien."
+student 2: "Ook zou ik willen leren hoe ik een eigen gekozen font kan gebruiken."
+student 3: 
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
 
 
 ### Verslag van meeting

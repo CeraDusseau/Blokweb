@@ -17,3 +17,7 @@ function exitMenu(event) {
     deNav.classList.remove("toonMenu");
     deexitButton.classList.add("exitknop");
 }
+
+var afspeelButton = document.querySelector("main article div button");
+
+afspeelButton.addEventListener("click", )

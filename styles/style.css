@@ -15,14 +15,16 @@
 :root {
   --basis-kleur-zwart: #000;
   --kleur-wit: #fff;
-
+  --animatiekleur: rgb(255, 0, 0);
 }
 
 
 
 @font-face {
-  font-family: gothambold-webfont;
-  src: url(gothambold-webfont.woff);
+  font-family: "gothambold1";
+  src: url(fonts/gothambold-webfont.woff) format("woff");
+  font-family: "gothambold2";
+  src: url(fonts/gothambold-webfont.woff2) format("woff2");
 }
 
 
@@ -35,6 +37,7 @@
 body {
   margin: 0;
   background-color: var(--basis-kleur-zwart);
+  font-family: "gothambold1";
 
 }
 
@@ -50,6 +53,7 @@ nav {
   position: relative;
   display: flex;
   align-items: center;
+  z-index: 200;
 }
 
 nav ul {
@@ -87,8 +91,8 @@ nav button:nth-of-type(2) {
   color: white;
   border: none;
   background-color: gray;
-  width: 1.5em;
-  height: 1.5em;
+  width: 2em;
+  height: 2em;
   position: absolute;
   right: -11em;
   top: 0.5em;
@@ -186,7 +190,9 @@ header {
   display: flex;
   position: sticky;
   top: 0;
+  z-index: 100;
   align-items: center;
+  font-family: "gothambold1";
 }
 
 header a {
@@ -202,6 +208,7 @@ header a {
 /***********/
 article:first-of-type {
   position: relative;
+  z-index: 1;
 
 }
 
@@ -217,21 +224,58 @@ article:first-of-type div {
 }
 
 
-main article img:first-of-type {
-  width: 24em;
-  height: 18em;
+article img:nth-of-type(1) {
+  width: 23.43em;
+  height: 14.5em;
+}
+
+article div:first-of-type button {
+  border-radius: 1em;
+  color: var(--basis-kleur-zwart);
+  border: none;
+  background-color: var(--kleur-wit);
+  width: 2em;
+  height: 2em;
 }
 
 h2 {
   color: white;
   font-size: 1.2em;
   line-height: 1.5em;
+  font-family: "gothambold1";
 }
 
 h3 {
   color: white;
   font-size: 1em;
   line-height: 1em;
+  font-family: "gothambold1";
+}
+
+/* Code om de button te animeren */
+@keyframes afspelen-animatie {
+  0% {
+    width: 2em;
+    border-radius: 0;
+    background-color: var(--start-color);
+  }
+
+  50% {
+    width: 4em;
+    border-radius: .5em;
+    background-color: var(--end-color);
+  }
+
+  100% {
+    width: 1em;
+    border-radius: 0;
+    background-color: var(--start-color);
+  }
+}
+
+section.andere-properties {
+  --start-color: crimson;
+  --end-color: gold;
 }
 
 
@@ -263,15 +307,18 @@ section:nth-of-type(2) {
 
 
 /***********/
-/*Article 2*/
+/*article 4*/
 /***********/
-
+article a:nth-child(2) {
+  width: 320px;
+  height: 180.11px;
+}
 
 
 
 
 /***********/
-/*Section 4*/
+/*Section 5*/
 /***********/
 section {
   display: flex;
@@ -321,6 +368,31 @@ section>a>img {
   width: 5.73em;
 
 }
+
+
+
+
+
+/*********************/
+/*section 7 met buttons*/
+/*********************/
+section:nth-of-type(7) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+
+}
+
+section button {
+  border-radius: 1em;
+  color: var(--basis-kleur-zwart);
+  border: none;
+  background-color: var(--kleur-wit);
+  width: 2em;
+  height: 2em;
+}
+
 
 
 
