@@ -123,7 +123,7 @@ student 3:
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
+- punt 1 ik heb geleerd hoe ik een scrollbar kan maken en als de pagina dan groter wordt hoe dit dan aanpast.
 - punt 2
 - nog een punt
 - ...
