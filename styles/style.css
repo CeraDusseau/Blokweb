@@ -38,6 +38,7 @@ body {
   margin: 0;
   background-color: var(--basis-kleur-zwart);
   font-family: "gothambold1";
+  padding: .3em;
 
 }
 
@@ -204,13 +205,13 @@ nav a.active {
     display: block;
     background-color: currentColor;
     transition: transform .3s;
-    transform-origin: bottom left;
+    transform-origin: right center;
     transform: scaleX(0);
 
   }
 
   nav a:hover::after {
-    transform-origin: bottom left;
+    transform-origin: left center;
     transform: scaleX(1);
   }
 }
@@ -245,14 +246,14 @@ header a {
 /***********/
 /*Main -> article 1 */
 /***********/
-article:first-of-type {
+article:nth-of-type(1) {
   position: relative;
   z-index: 1;
 
 }
 
 /* Toestemming van Sanne */
-article:first-of-type div {
+article:nth-of-type(1) div {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -267,6 +268,12 @@ article img:nth-of-type(1) {
   height: 14.5em;
 }
 
+@media(min-width:30em) {
+  article img:nth-of-type(1) {
+    width: 43em;
+    height: 17.5em;
+  }
+}
 
 
 article div:first-of-type button {
@@ -372,6 +379,21 @@ section:nth-of-type(2) a img {
 /***********/
 /*article 4*/
 /***********/
+article:nth-of-type(2) section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1em;
+
+}
+
+article:nth-of-type(2) img {
+  display: block;
+  width: 15.5em;
+  height: 8.6em;
+}
+
 
 
 
@@ -589,17 +611,84 @@ section:nth-of-type(13) a img {
   width: 100%;
 }
 
+
+
+
 /***********/
 /*artcle 3*/
 /***********/
+article:nth-of-type(3) {
+  position: relative;
 
+  background-image: linear-gradient(rgb(0 0 0 / 0), black);
+
+}
+
+article:nth-of-type(3) img {
+  border-radius: 1em;
+  width: 20em;
+  height: auto;
+}
+
+
+article:nth-of-type(3) h3 {
+  position: absolute;
+  color: var(--kleur-wit);
+  bottom: -1.2em;
+  left: 3.5em;
+  font-size: 1.3em;
+
+}
+
+article:nth-of-type(3) section {
+  position: absolute;
+  color: var(--kleur-wit);
+  display: flex;
+  gap: 1em;
+  bottom: -2em;
+  left: 7em;
+}
+
+/***********/
+/*artcle 4*/
+/***********/
+article:nth-of-type(4) {
+  position: relative;
+  background-image: linear-gradient(rgb(0 0 0 / 0), black);
+
+}
+
+article:nth-of-type(4) img {
+  border-radius: 1em;
+  width: 20em;
+  height: auto;
+}
+
+
+article:nth-of-type(4) h3 {
+  position: absolute;
+  color: var(--kleur-wit);
+  bottom: -1.2em;
+  left: 3.5em;
+  font-size: 1.3em;
+
+}
+
+article:nth-of-type(4) section {
+  position: absolute;
+  color: var(--kleur-wit);
+  display: flex;
+  gap: 1em;
+  bottom: -2em;
+  left: 7em;
+}
 
 
 
 
 
 /***********/
-/*Section 12*/
+/*Section 14*/
 /***********/
 
 section:nth-of-type(14) a {
