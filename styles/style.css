@@ -25,6 +25,8 @@
   src: url(fonts/gothambold-webfont.woff) format("woff");
   font-family: "gothambold2";
   src: url(fonts/gothambold-webfont.woff2) format("woff2");
+  font-family: "gotham-book";
+  src: url(fonts/gotham-book) format("otf");
 }
 
 
@@ -325,7 +327,7 @@ section.button:hover div {
 h2 {
   color: white;
   font-size: 1.2em;
-  line-height: 1.5em;
+  line-height: 1.3em;
   font-family: "gothambold1";
 }
 
@@ -385,6 +387,7 @@ article:nth-of-type(2) section {
   align-items: center;
   flex-wrap: nowrap;
   gap: 1em;
+  overflow-x: auto;
 
 }
 
@@ -910,18 +913,179 @@ a {
 /*****************************/
 /*tweede pagina*/
 /*****************************/
+/* Ik heb een class gezet op de main 
+zodat ik de tweede pagina in dezelfde css kan stylen */
 
-main section:nth-of-type(22) {
-  font-family: "gothambold1";
-  font-size: 1em;
-  padding: 0.3em;
+
+
+/***********/
+/*ALGEMENE STIJL*/
+/***********/
+:root {
+  --basis-kleur-zwart: #000;
+  --kleur-wit: #fff;
+  --animatiekleur: rgb(255, 0, 0);
+  --gothambookkleur: rgba(255, 255, 255, .7);
+  --buttonkleur: rgba(255, 255, 255, .16);
+}
+
+
+
+
+
+/********************/
+/*main -> section 1*/
+/********************/
+.tweedepagina section:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.tweedepagina section button:nth-of-type(1) {
+  border-radius: 1em;
+  background-color: var(--basis-kleur-zwart);
+  color: white;
+  font-size: 1.1em;
 
 }
 
-main section:nth-of-type(23) {
+.tweedepagina section:nth-of-type(1) p {
+  font-size: 1.1em;
+  font-family: "gothambold1";
+}
+
+
+
+
+
+/********************/
+/*main -> section 2*/
+/********************/
+.tweedepagina section:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.tweedepagina section:nth-of-type(2) img:first-child {
+  width: 6.5em;
+  height: auto;
+
+}
+
+.tweedepagina section:nth-of-type(2) img:nth-child(2) {
+  width: 17em;
+  height: auto;
+}
+
+
+
+
+
+/********************/
+/*main -> article 3*/
+/********************/
+.tweedepagina article p:nth-of-type(1) {
+  font-size: .9em;
+  font-family: "gotham-book";
+  margin: 1.3em;
+  color: var(--gothambookkleur);
+}
+
+
+
+
+
+/***************************/
+/*main -> section, button 4*/
+/***************************/
+.tweedepagina section button:nth-of-type(2) {
+  background-color: var(--buttonkleur);
+  color: var(--kleur-wit);
+  border-radius: 1em;
+  font-size: .8em;
+  width: 14em;
+  height: 2.8em
+}
+
+.tweedepagina section button:nth-of-type(3) {
+  background-color: var(--buttonkleur);
+  color: var(--kleur-wit);
+  border-radius: 1em;
+  font-size: .8em;
+  width: 4em;
+  height: 2.8em
+}
+
+
+
+
+
+/*******************/
+/*main -> section 5*/
+/*******************/
+.tweedepagina section:nth-of-type(4) ul {
+  color: var(--kleur-wit);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  height: 180px;
+  gap: .6em
+}
+
+
+.tweedepagina section:nth-of-type(4) li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.tweedepagina section:nth-of-type(4) li::after {
+  content: "";
+  text-decoration: none;
+  height: 1px;
+  width: 100%;
+  display: block;
+  color: var(--animatiekleur);
+  background-color: currentColor;
+  transition: transform .3s;
+  transform-origin: center;
+  transform: scaleX(0);
+}
+
+.tweedepagina section:nth-of-type(4) li:hover::after {
+  transform-origin: center;
+  transform: scaleX(1);
+}
+
+
+
+
+
+/*******************/
+/*main -> article 6*/
+/*******************/
+.tweedepagina article:nth-of-type(2) section {
+  display: flex;
+  justify-content: center;
+
+}
+
+.tweedepagina article:nth-of-type(2) img {
+  width: 7em;
+  height: auto;
+}
+
+.tweedepagina article:nth-of-type(2) p {
+  font-size: .9em;
+  font-family: "gotham-book";
+  margin: 1.3em;
+  color: var(--gothambookkleur);
+}
+
+
+@media (min-width:40em) {
+  .tweedepagina article:nth-of-type(2) img {
+    width: 13em;
+    height: 7.6em;
+  }
 }
