@@ -18,6 +18,22 @@ function exitMenu(event) {
     deexitButton.classList.add("exitknop");
 }
 
-var afspeelButton = document.querySelector("main article div button");
+var switchbutton = document.querySelector(".tweedepagina article:nth-of-type(2)");
 
-afspeelButton.addEventListener("click", )
+switchbutton.addEventListener("click", andermenu);
+
+function andermenu(event) {
+    anderekekenook = event.target.parentNode;
+    anderekekenook.classList.remove("afleveringen");
+    switchbutton.classList.add("andermenu");
+}
+
+var switchbuttonterug = document.querySelector(".tweedepagina section:nth-of-type(5)");
+
+switchbuttonterug.addEventListener("click", afleveringen);
+
+function afleveringen(event) {
+    anderekekenook = event.target.parentNode;
+    anderekekenook.classList.remove("andermenu");
+    switchbuttonterug.classList.add("afleveringen");
+}

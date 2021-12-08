@@ -163,6 +163,27 @@ nav a.active {
   font-weight: bold;
 }
 
+nav a:focus {
+  color: red;
+}
+
+nav a::after {
+  content: "";
+  text-decoration: none;
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: currentColor;
+  transition: transform .3s;
+  color: var(--animatiekleur);
+  transform-origin: right center;
+  transform: scaleX(0);
+}
+
+nav a:hover::after {
+  transform-origin: left center;
+  transform: scaleX(1);
+}
 
 
 
@@ -223,6 +244,7 @@ nav a.active {
     display: block;
     background-color: currentColor;
     transition: transform .3s;
+    color: var(--animatiekleur);
     transform-origin: right center;
     transform: scaleX(0);
   }
@@ -928,7 +950,8 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
   border-radius: 1em;
   font-size: .8em;
   width: 14em;
-  height: 2.8em
+  height: 2.8em;
+
 }
 
 .tweedepagina section button:nth-of-type(2) {
@@ -945,13 +968,9 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
   color: var(--kleur-wit);
   border-radius: 1em;
   font-size: .8em;
-  width: 4em;
-  height: 2.8em
+  width: 5em;
+  height: 2.8em;
 }
-
-
-
-
 
 /*******************/
 /*main -> section 5*/
@@ -964,11 +983,12 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
   gap: .6em
 }
 
-
 .tweedepagina section:nth-of-type(4) li {
   text-decoration: none;
   list-style: none;
 }
+
+
 
 .tweedepagina section:nth-of-type(4) li::after {
   content: "";
@@ -995,10 +1015,13 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
 /*******************/
 /*main -> article 6*/
 /*******************/
+.tweedepagina article:nth-of-type(2).afleveringen {
+  transform: translateX(0%);
+}
+
 .tweedepagina article:nth-of-type(2) section {
   display: flex;
   justify-content: center;
-
 }
 
 .tweedepagina article:nth-of-type(2) img {
@@ -1035,25 +1058,29 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
   flex-wrap: wrap;
 }
 
+.tweedepagina section:nth-of-type(5).andermenu {
+  transform: translateX(0%);
+}
+
 .tweedepagina section article:nth-of-type(1) img {
-  width: 10em;
+  width: 16em;
   height: auto;
 }
 
 
 .tweedepagina section article:nth-of-type(2) img {
-  width: 10em;
+  width: 16em;
   height: auto;
 }
 
 
 .tweedepagina section article:nth-of-type(3) img {
-  width: 10em;
+  width: 16em;
   height: auto;
 }
 
 
 .tweedepagina section article:nth-of-type(4) img {
-  width: 10em;
+  width: 16em;
   height: auto;
 }
