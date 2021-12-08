@@ -44,6 +44,10 @@ body {
 
 }
 
+header {
+  width: 100%;
+}
+
 
 
 
@@ -57,6 +61,7 @@ nav {
   display: flex;
   align-items: center;
   z-index: 200;
+  width: 100%;
 }
 
 nav ul {
@@ -142,7 +147,8 @@ nav img:first-of-type {
 }
 
 nav img:nth-of-type(2) {
-
+  gap: .3em;
+  margin-left: auto;
   width: 21.75px;
   height: 22px;
 }
@@ -190,6 +196,13 @@ nav a.active {
     display: flex;
     padding: 0;
     background-color: transparent;
+  }
+
+  nav img:nth-of-type(2) {
+    gap: .3em;
+    margin-left: auto;
+    width: 21.75px;
+    height: 22px;
   }
 
   nav a {
