@@ -124,9 +124,7 @@ student 3:
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
 - punt 1 ik heb geleerd hoe ik een scrollbar kan maken en als de pagina dan groter wordt hoe dit dan aanpast.
-- punt 2
-- nog een punt
-- ...
+- punt 2 Ik heb geleerd hoe ik de tweede html pagina kon koppelen aan een css
 
 </details>
 
@@ -140,7 +138,51 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
-Lijst met je bevindingen die in de test naar voren kwamen:
+Test met beperkingen
+Noor:
+
+Tunnel visie:
+plaatje 1 is niet echt te zien. 
+button is te zien maar niet helemaal goed. Moet ik nog afmaken
+plaatjes zijn wel goed te zien verder
+getallen zijn bij live tv wel goed te zien.
+
+button’s op pagina 2 ook goed te zien.
+
+diabetic disease:
+Pagina is goed te lezen
+grote is normaal
+donkere plaatjes zijn lastiger om te zien.
+
+Central field lost:
+Tekst is moeilijker te lezen.
+tekst in verder kijken is lastiger
+
+Blur:
+tekst niet te lezen tenzij je inzoomt
+als je inzoomt is het goed te lezen
+
+blur and central field lost:
+heel lastig.
+Plaatjes zijn niet te lezen
+afspeel button is lastig te lezen.
+werkt alleen als je je scherm groot maakt.
+button’s op de tweede pagina zijn moeilijk te zien.
+
+ADHD test
+scrollen tijdens een afleiding is lastig. 
+je vergeet snel wat je hebt aangeklikt
+korte tekst is handig zodat je snel kan lezen wat er staat.
+
+Parkinson:
+
+Grote knoppen zijn wel chil
+
+Alles met toetsenboard
+
+als je begint bij de pagina kom je niet bij de nav dat is pas als je onderaan bent.
+Meer de focus state uitwerken
+
 
 #### Titel eerste bevinding
 Hier korte omschrijving (met indien nodig een afbeelding)
