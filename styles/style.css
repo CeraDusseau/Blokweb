@@ -1004,7 +1004,7 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
 /*******************/
 /*main -> section 5*/
 /*******************/
-.tweedepagina section:nth-of-type(4) ul {
+.tweedepagina>ul {
   color: var(--kleur-wit);
   display: flex;
   justify-content: center;
@@ -1012,14 +1012,18 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
   gap: .6em
 }
 
-.tweedepagina section:nth-of-type(4) li {
+.tweedepagina>ul li {
   text-decoration: none;
   list-style: none;
 }
 
+.tweedepagina>ul li button {
+  background-color: var(--buttonkleur);
+  border: none;
+}
 
 
-.tweedepagina section:nth-of-type(4) li::after {
+.tweedepagina>ul li::after {
   content: "";
   text-decoration: none;
   height: 1px;
@@ -1032,7 +1036,7 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
   transform: scaleX(0);
 }
 
-.tweedepagina section:nth-of-type(4) li:hover::after {
+.tweedepagina>ul li:hover::after {
   transform-origin: center;
   transform: scaleX(1);
 }
@@ -1047,14 +1051,10 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
 /*main -> article 6*/
 /*******************/
 .tweedepagina article:nth-of-type(2) {
-  background-color: red;
-  display: block;
+  background-color: var(--basis-kleur-zwart);
 }
 
-.tweedepagina article:nth-of-type(2).weg {
-  display: none;
 
-}
 
 .tweedepagina article:nth-of-type(2) section {
   display: flex;
@@ -1096,10 +1096,7 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
   display: none;
 }
 
-.tweedepagina article:nth-of-type(3).afleveringen {
-  display: block;
 
-}
 
 .tweedepagina article:nth-of-type(3) section:nth-of-type(1) img {
   width: 23em;
@@ -1122,4 +1119,13 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
 .tweedepagina article:nth-of-type(3) section:nth-of-type(4) img {
   width: 23em;
   height: auto;
+}
+
+.weg {
+  display: none;
+
+}
+
+.toen {
+  display: block;
 }
