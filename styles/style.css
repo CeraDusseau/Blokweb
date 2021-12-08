@@ -13,9 +13,9 @@
 /*ROOT*/
 /***********/
 :root {
-  --basis-kleur-zwart: #000;
+  --basis-kleur-zwart: #111;
   --kleur-wit: #fff;
-  --animatiekleur: rgb(255, 0, 0);
+  --animatiekleur: #ff3746;
   --gothambookkleur: rgba(255, 255, 255, .7);
   --buttonkleur: rgba(255, 255, 255, .16);
 }
@@ -45,6 +45,28 @@ body {
   background-color: var(--basis-kleur-zwart);
   font-family: Bebas Neue;
   padding: .1em;
+
+}
+
+body:focus {
+  color: var(--buttonkleur)
+}
+
+@media (min-width:30em) {
+  h2 {
+    max-width: 36em;
+    line-height: 1em;
+  }
+
+  h3 {
+    max-width: 36em;
+    line-height: 1em;
+  }
+
+  p {
+    max-width: 36em;
+    line-height: 1em;
+  }
 
 }
 
@@ -161,10 +183,12 @@ nav img:nth-of-type(4) {
 
 nav a.active {
   font-weight: bold;
+  color: var(--animatiekleur);
 }
 
 nav a:focus {
-  color: red;
+  color: var(--animatiekleur);
+
 }
 
 nav a::after {
@@ -253,6 +277,10 @@ nav a:hover::after {
     transform-origin: left center;
     transform: scaleX(1);
   }
+
+  nav a:focus {
+    color: var(--animatiekleur);
+  }
 }
 
 
@@ -277,6 +305,9 @@ header a {
   text-decoration: none;
 }
 
+header a:focus {
+  color: var(--buttonkleur);
+}
 
 
 
@@ -492,7 +523,6 @@ section:nth-of-type(6) {
 
 section:nth-of-type(6) a {
   display: block;
-  background-color: rosybrown;
   min-width: 10em;
 }
 
@@ -615,7 +645,6 @@ section:nth-of-type(13) {
 
 section:nth-of-type(13) a {
   display: block;
-  background-color: rosybrown;
   min-width: 10em;
 
 
@@ -1012,11 +1041,19 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
 
 
 
+
+
 /*******************/
 /*main -> article 6*/
 /*******************/
-.tweedepagina article:nth-of-type(2).afleveringen {
-  transform: translateX(0%);
+.tweedepagina article:nth-of-type(2) {
+  background-color: red;
+  display: block;
+}
+
+.tweedepagina article:nth-of-type(2).weg {
+  display: none;
+
 }
 
 .tweedepagina article:nth-of-type(2) section {
@@ -1051,36 +1088,38 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
 /*********************/
 /*main -> section 7*/
 /*********************/
-.tweedepagina section:nth-of-type(5) {
+.tweedepagina article:nth-of-type(3) {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
+  display: none;
 }
 
-.tweedepagina section:nth-of-type(5).andermenu {
-  transform: translateX(0%);
+.tweedepagina article:nth-of-type(3).afleveringen {
+  display: block;
+
 }
 
-.tweedepagina section article:nth-of-type(1) img {
-  width: 16em;
+.tweedepagina article:nth-of-type(3) section:nth-of-type(1) img {
+  width: 23em;
   height: auto;
 }
 
 
-.tweedepagina section article:nth-of-type(2) img {
-  width: 16em;
+.tweedepagina article:nth-of-type(3) section:nth-of-type(2) img {
+  width: 23em;
   height: auto;
 }
 
 
-.tweedepagina section article:nth-of-type(3) img {
-  width: 16em;
+.tweedepagina article:nth-of-type(3) section:nth-of-type(3) img {
+  width: 23em;
   height: auto;
 }
 
 
-.tweedepagina section article:nth-of-type(4) img {
-  width: 16em;
+.tweedepagina article:nth-of-type(3) section:nth-of-type(4) img {
+  width: 23em;
   height: auto;
 }

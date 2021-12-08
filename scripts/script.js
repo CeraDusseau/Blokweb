@@ -18,22 +18,14 @@ function exitMenu(event) {
     deexitButton.classList.add("exitknop");
 }
 
-var switchbutton = document.querySelector(".tweedepagina article:nth-of-type(2)");
 
-switchbutton.addEventListener("click", andermenu);
 
-function andermenu(event) {
-    anderekekenook = event.target.parentNode;
-    anderekekenook.classList.remove("afleveringen");
-    switchbutton.classList.add("andermenu");
+var switchbutton = document.querySelector("#knop");
+var artikel1 = document.querySelector(".tweedepagina article:nth-of-type(2)");
+
+function heen() {
+    console.log("haai");
+    artikel1.classList.add("weg");
 }
 
-var switchbuttonterug = document.querySelector(".tweedepagina section:nth-of-type(5)");
-
-switchbuttonterug.addEventListener("click", afleveringen);
-
-function afleveringen(event) {
-    anderekekenook = event.target.parentNode;
-    anderekekenook.classList.remove("andermenu");
-    switchbuttonterug.classList.add("afleveringen");
-}
+switchbutton.addEventListener("click", heen);

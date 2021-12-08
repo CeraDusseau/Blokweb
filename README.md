@@ -139,7 +139,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Bevindingen
 Test met beperkingen
-Noor:
+Noor Meijns:
 
 Tunnel visie:
 plaatje 1 is niet echt te zien. 
@@ -185,27 +185,28 @@ Meer de focus state uitwerken
 
 
 #### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+ 
+Voor de mensen die slecht ziend zijn en gebruik maken van screenreaders is het belangrijk dat er bij de alt een duidelijke omschrijving staat van wat er precies op het plaatje staat.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Om mijn site te verbeteren heb ik bij elke afbeelding alt een duidelijke omschrijving van de tekst gezet
 
 
 #### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+Voor de mensen die alleen maar met het toetsenbord door te pagina navigeren is het belangrijk dat de focus state goed werkt.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Om mijn site te verbeteren heb ik de focus state goed op laten vallen. Verder heb ik ook gebruik gemaakt van de active state zodat de gebruiker weet waar hij is op de site.
+
+Dit laatste is ook handig voor mensen die snel afgeraakt zijn. Zij weten door de active state waar ze zich bevinden op de site.
 
 
 #### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+Ik voor de mensen die slecht ziend zijn en de site erg willen vergroten is het makkelijk als zij de tekst dus goed kunnen lezen en het niet 1 lange zin wordt.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Om mijn site te verbeteren heb ik de tekst een max-width gegeven zodat de tekst niet te groot wordt als je de pagina vergoot en zo nog makkelijk te lezen is.
 
 
 #### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+voor blur and central field lost vind ik het lastig iets te bedenken, buiten een goede voice over, zodat zij makkelijk door de site kunnen navigeren 
 
 </details>
 
