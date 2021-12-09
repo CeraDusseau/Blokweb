@@ -18,28 +18,22 @@ function exitMenu(event) {
     deexitButton.classList.add("exitknop");
 }
 
+var switchbutton = document.querySelector(".tweedepagina article:nth-of-type(2)");
 
-// Met hulp van Sundous!!!!!!
-var switchbutton = document.querySelector(".tweedepagina>ul li:first-of-type  button");
-var artikel1 = document.querySelector(".tweedepagina article:nth-of-type(2)");
-var switchbutton2 = document.querySelector(".tweedepagina>ul li:last-of-type button");
-var artikel2 = document.querySelector(".tweedepagina article:nth-of-type(3)");
+switchbutton.addEventListener("click", andermenu);
 
-
-function artikel1weg() {
-    console.log("haai");
-    artikel1.classList.add("toen");
-    artikel2.classList.add("weg");
+function andermenu(event) {
+    anderekekenook = event.target.parentNode;
+    anderekekenook.classList.remove("afleveringen");
+    switchbutton.classList.add("andermenu");
 }
 
-function artikel2tweg() {
-    console.log("haai 2")
-    artikel2.classList.add("toen");
-    artikel1.classList.add("weg");
+var switchbuttonterug = document.querySelector(".tweedepagina section:nth-of-type(5)");
 
-    artikel1.classList.remove("toen");
-    artikel2.classList.remove("weg");
+switchbuttonterug.addEventListener("click", afleveringen);
+
+function afleveringen(event) {
+    anderekekenook = event.target.parentNode;
+    anderekekenook.classList.remove("andermenu");
+    switchbuttonterug.classList.add("afleveringen");
 }
-
-switchbutton.addEventListener("click", artikel1weg);
-switchbutton2.addEventListener("click", artikel2tweg);

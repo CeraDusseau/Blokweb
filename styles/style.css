@@ -13,9 +13,9 @@
 /*ROOT*/
 /***********/
 :root {
-  --basis-kleur-zwart: #111;
+  --basis-kleur-zwart: #000;
   --kleur-wit: #fff;
-  --animatiekleur: #ff3746;
+  --animatiekleur: rgb(255, 0, 0);
   --gothambookkleur: rgba(255, 255, 255, .7);
   --buttonkleur: rgba(255, 255, 255, .16);
 }
@@ -45,28 +45,6 @@ body {
   background-color: var(--basis-kleur-zwart);
   font-family: Bebas Neue;
   padding: .1em;
-
-}
-
-body:focus {
-  color: var(--buttonkleur)
-}
-
-@media (min-width:30em) {
-  h2 {
-    max-width: 36em;
-    line-height: 1em;
-  }
-
-  h3 {
-    max-width: 36em;
-    line-height: 1em;
-  }
-
-  p {
-    max-width: 36em;
-    line-height: 1em;
-  }
 
 }
 
@@ -183,12 +161,10 @@ nav img:nth-of-type(4) {
 
 nav a.active {
   font-weight: bold;
-  color: var(--animatiekleur);
 }
 
 nav a:focus {
-  color: var(--animatiekleur);
-
+  color: red;
 }
 
 nav a::after {
@@ -277,10 +253,6 @@ nav a:hover::after {
     transform-origin: left center;
     transform: scaleX(1);
   }
-
-  nav a:focus {
-    color: var(--animatiekleur);
-  }
 }
 
 
@@ -305,9 +277,6 @@ header a {
   text-decoration: none;
 }
 
-header a:focus {
-  color: var(--buttonkleur);
-}
 
 
 
@@ -322,6 +291,8 @@ article:nth-of-type(1) {
 
 /* Toestemming van Sanne */
 article:nth-of-type(1) div {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -376,16 +347,33 @@ h3 {
 
 
 article div:first-of-type button {
+  display: flex;
+  align-items: center;
+  order: -3;
   border-radius: 1em;
   color: var(--kleur-wit);
   border: none;
   background-color: var(--animatiekleur);
   width: 2em;
   height: 2em;
+  padding-left: 0;
+  overflow: hidden;
+  transition: .3s;
+}
+
+article div:first-of-type button::before {
+  flex-shrink: 0;
+  display: block;
+  content: "";
+  width: 2em;
+  height: 2em;
+  background-color: white;
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 0% 0%);
+  transform: scale(.6);
 }
 
 article:hover div:first-of-type button {
-  width: 6em;
+  width: 6.5em;
 }
 
 section.button {
@@ -523,6 +511,7 @@ section:nth-of-type(6) {
 
 section:nth-of-type(6) a {
   display: block;
+  background-color: rosybrown;
   min-width: 10em;
 }
 
@@ -645,6 +634,7 @@ section:nth-of-type(13) {
 
 section:nth-of-type(13) a {
   display: block;
+  background-color: rosybrown;
   min-width: 10em;
 
 
@@ -884,6 +874,7 @@ h1 {
 p {
   color: var(--kleur-wit);
   font-size: .75em;
+  /* kleine lettertjes hoor */
 }
 
 a {
@@ -907,48 +898,36 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
 
 
 /********************/
-/*main -> section 1*/
+/*main terug link ->*/
 /********************/
-.tweedepagina section:nth-of-type(1) {
+
+
+/***********/
+/*hele article*/
+/***********/
+.tweedepagina>article {
+  padding: 1em;
+}
+
+
+
+/********************/
+/*main article section 1*/
+/********************/
+.tweedepagina>article section:nth-of-type(1) {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
 }
 
-.tweedepagina section:nth-of-type(1) button {
-  border-radius: 1em;
-  background-color: var(--basis-kleur-zwart);
-  color: white;
-  font-size: 1.1em;
-
-}
-
-.tweedepagina section:nth-of-type(1) p {
-  font-size: 1.1em;
-  font-family: "gothambold1";
-}
-
-
-
-
-
-/********************/
-/*main -> section 2*/
-/********************/
-.tweedepagina section:nth-of-type(2) {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-
-.tweedepagina section:nth-of-type(2) img:nth-child(1) {
-  width: 6.5em;
+.tweedepagina>article section:nth-of-type(1) img:nth-child(1) {
+  width: 40%;
   height: auto;
 
 }
 
-.tweedepagina section:nth-of-type(2) img:nth-child(2) {
-  width: 17em;
+.tweedepagina>article section:nth-of-type(1) img:nth-child(2) {
+  width: 60%;
   height: auto;
 }
 
@@ -957,9 +936,9 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
 
 
 /********************/
-/*main -> article 3*/
+/*main -> article 2*/
 /********************/
-.tweedepagina article p:nth-of-type(1) {
+.tweedepagina>article article p {
   font-size: .9em;
   font-family: "gotham-book";
   margin: 1.3em;
@@ -973,159 +952,177 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
 /***************************/
 /*main -> section, button 4*/
 /***************************/
-.tweedepagina section button:nth-of-type(1) {
-  background-color: var(--animatiekleur);
-  color: var(--kleur-wit);
-  border-radius: 1em;
-  font-size: .8em;
-  width: 14em;
-  height: 2.8em;
-
-}
-
-.tweedepagina section button:nth-of-type(2) {
-  background-color: var(--buttonkleur);
-  color: var(--kleur-wit);
-  border-radius: 1em;
-  font-size: .8em;
-  width: 14em;
-  height: 2.8em
-}
-
-.tweedepagina section button:nth-of-type(3) {
-  background-color: var(--buttonkleur);
-  color: var(--kleur-wit);
-  border-radius: 1em;
-  font-size: .8em;
-  width: 5em;
-  height: 2.8em;
-}
-
-/*******************/
-/*main -> section 5*/
-/*******************/
-.tweedepagina>ul {
-  color: var(--kleur-wit);
+.tweedepagina>article section:nth-of-type(2) {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: .6em
+  gap: .7em;
 }
 
-.tweedepagina>ul li {
-  text-decoration: none;
-  list-style: none;
+.tweedepagina>article section:nth-of-type(2) button {
+  color: var(--kleur-wit);
+  border-radius: 1em;
+  font-size: .8em;
+  height: 2.8em;
 }
 
-.tweedepagina>ul li button {
+.tweedepagina>article section:nth-of-type(2) button:nth-of-type(1) {
+  background-color: var(--animatiekleur);
+  flex-basis: 14em;
+}
+
+.tweedepagina>article section:nth-of-type(2) button:nth-of-type(2) {
   background-color: var(--buttonkleur);
-  border: none;
+  flex-basis: 14em;
+
 }
 
+.tweedepagina>article section:nth-of-type(2) button:nth-of-type(3) {
+  background-color: var(--buttonkleur);
+  flex-basis: 5em;
+}
 
-.tweedepagina>ul li::after {
+/*********************/
+/* main -> aside 1 */
+/*********************/
+
+/* een algemene class om een element visueel te verbergen maar wel toegankelijk te houden voor screenreaders */
+/* deze class staat in de html op de radio buttons */
+/* het is beter om deze class ergens bovenin te zetten bij de algemene css */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  /* added line */
+  border: 0;
+}
+
+/* de hele 4e section */
+.tweedepagina>aside {
+  display: grid;
+
+  grid-template-columns: min-content 1fr;
+  gap: 1em;
+  padding: 1em;
+}
+
+/* de radio buttons en labels - het filter */
+.tweedepagina>aside label {
+  position: relative;
+  display: block;
+  justify-self: start;
+
+  min-width: 8em;
+  padding: .75em 0;
+
+  color: var(--kleur-wit);
+}
+
+/* het label direct na een radio die gechecked is */
+.tweedepagina>aside input:checked+label {
+  font-weight: bold;
+}
+
+/* het label direct na een radio die NIET gechecked is */
+.tweedepagina>aside input:not(:checked)+label {
+  cursor: pointer;
+}
+
+/* het lijntje onder de labels */
+.tweedepagina>aside input:not(:checked)+label::after {
   content: "";
-  text-decoration: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: block;
   height: 1px;
   width: 100%;
-  display: block;
+
   color: var(--animatiekleur);
   background-color: currentColor;
+
   transition: transform .3s;
-  transform-origin: center;
   transform: scaleX(0);
 }
 
-.tweedepagina>ul li:hover::after {
-  transform-origin: center;
+.tweedepagina>aside input:not(:checked)+label:hover::after {
   transform: scaleX(1);
 }
 
 
+/* beide lijsten */
+.tweedepagina>aside ul {
+  grid-column-start: 1;
+  grid-column-end: -1;
 
+  margin: 0;
+  padding: 0;
 
-
-
-
-/*******************/
-/*main -> article 6*/
-/*******************/
-.tweedepagina article:nth-of-type(2) {
-  background-color: var(--basis-kleur-zwart);
+  /* beide lijsten worden standaatd verborgen*/
+  display: none;
 }
 
-
-
-.tweedepagina article:nth-of-type(2) section {
-  display: flex;
-  justify-content: center;
+/* lijst - afleveringen */
+/* als de 1e radio button gechecked is */
+/* dan wordt de 1e ul getoond */
+/* de 1e radio button is gechecked in de html */
+/* dus de 1e ul wordt bij openen van de pagina getonnd */
+.tweedepagina>aside input:nth-of-type(1):checked~ul:nth-of-type(1) {
+  display: grid;
+  gap: 1em;
 }
 
-.tweedepagina article:nth-of-type(2) img {
+.tweedepagina>aside ul:nth-of-type(1) img {
+  float: left;
   width: 7em;
   height: auto;
+  margin: 0 1em 1em 0;
 }
 
-.tweedepagina article:nth-of-type(2) p {
+.tweedepagina>aside ul:nth-of-type(1) p {
+  margin: 0;
   font-size: .9em;
+  /* kleine lettertjes hoor */
   font-family: "gotham-book";
-  margin: 1.3em;
   color: var(--gothambookkleur);
 }
 
 
-@media (min-width:40em) {
-  .tweedepagina article:nth-of-type(2) img {
+@media (min-width:24em) {
+  .tweedepagina>aside ul:nth-of-type(1) li {
+    display: flex;
+    gap: 1.3em;
+    align-items: center;
+  }
+
+  .tweedepagina>aside ul:nth-of-type(1) img {
+    margin: 0;
+  }
+}
+
+@media (min-width:36em) {
+  .tweedepagina>aside ul:nth-of-type(1) img {
     width: 13em;
     height: 7.6em;
   }
 }
 
 
-
-
-
-/*********************/
-/*main -> section 7*/
-/*********************/
-.tweedepagina article:nth-of-type(3) {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
-  display: none;
+/* lijst - afleveringen */
+/* als de 2e radio button gechecked is */
+/* dan wordt de 2e ul getoond */
+.tweedepagina>aside input:nth-of-type(2):checked~ul:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+  gap: 1em;
 }
 
-
-
-.tweedepagina article:nth-of-type(3) section:nth-of-type(1) img {
-  width: 23em;
+/* ga je dat nog vervangen door content ipv een plaatje ????? */
+.tweedepagina>aside ul:nth-of-type(2) img {
+  width: 100%;
   height: auto;
-}
-
-
-.tweedepagina article:nth-of-type(3) section:nth-of-type(2) img {
-  width: 23em;
-  height: auto;
-}
-
-
-.tweedepagina article:nth-of-type(3) section:nth-of-type(3) img {
-  width: 23em;
-  height: auto;
-}
-
-
-.tweedepagina article:nth-of-type(3) section:nth-of-type(4) img {
-  width: 23em;
-  height: auto;
-}
-
-.weg {
-  display: none;
-
-}
-
-.toen {
-  display: block;
 }
