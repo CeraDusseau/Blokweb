@@ -511,7 +511,6 @@ section:nth-of-type(6) {
 
 section:nth-of-type(6) a {
   display: block;
-  background-color: rosybrown;
   min-width: 10em;
 }
 
@@ -551,7 +550,6 @@ section:nth-of-type(8) {
 
 section:nth-of-type(8) a {
   display: block;
-  background-color: rosybrown;
   min-width: 10em;
 
 
@@ -584,6 +582,7 @@ section:nth-of-type(9) a {
 /*Section 10*/
 /***********/
 section:nth-of-type(10) {
+  position: relative;
   display: flex;
   gap: 1em;
   overflow-x: auto;
@@ -593,7 +592,6 @@ section:nth-of-type(10) {
 
 section:nth-of-type(10) a {
   display: block;
-  background-color: rosybrown;
   min-width: 10em;
 }
 
@@ -608,9 +606,9 @@ section:nth-of-type(10) a img {
 
 
 /***********/
-/*Section 12*/
+/*Section 11*/
 /***********/
-section:nth-of-type(12) a {
+section:nth-of-type(11) a {
   font-family: "gothambold1";
   font-size: 1em;
   padding: 0.3em;
@@ -621,9 +619,9 @@ section:nth-of-type(12) a {
 
 
 /***********/
-/*Section 13*/
+/*Section 12*/
 /***********/
-section:nth-of-type(13) {
+section:nth-of-type(12) {
   display: flex;
   gap: 1em;
   overflow-x: auto;
@@ -632,16 +630,16 @@ section:nth-of-type(13) {
 
 
 
-section:nth-of-type(13) a {
+section:nth-of-type(12) a {
   display: block;
-  background-color: rosybrown;
+
   min-width: 10em;
 
 
 }
 
 
-section:nth-of-type(13) a img {
+section:nth-of-type(12) a img {
   display: block;
   width: 100%;
 }
@@ -650,44 +648,66 @@ section:nth-of-type(13) a img {
 
 
 /***********/
-/*artcle 3 section 14*/
+/*artcle 3 section 13*/
 /***********/
-section:nth-of-type(14) {
-  display: flex;
-  justify-content: space-around;
-  gap: .2em;
-}
 
-section:nth-of-type(14) article {
-  position: relative;
-  background-image: linear-gradient(rgb(0 0 0 / 0), black);
-}
-
-section:nth-of-type(14) article img {
-  border-radius: 1em;
-  width: 20em;
-  top: .5em;
-  height: auto;
-}
-
-
-
-section:nth-of-type(14) article h3 {
-  position: absolute;
-  color: var(--kleur-wit);
-  bottom: -1.2em;
-  left: 3.8em;
-  font-size: 1.3em;
-}
-
-section:nth-of-type(14) article section {
-  position: absolute;
-  color: var(--kleur-wit);
+section:nth-of-type(13) ul {
+  margin: 0;
+  padding: 0;
+  width: auto;
   display: flex;
   gap: 1em;
-  bottom: -2em;
-  left: 7em;
+  max-width: 40em;
 }
+
+section:nth-of-type(13) ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+section:nth-of-type(13) ul li img {
+  border-radius: 1em;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+}
+
+section:nth-of-type(13) ul li h3 {
+  margin: 0;
+  position: absolute;
+  bottom: 1em;
+  left: 1.7em;
+}
+
+section:nth-of-type(13) ul li p {
+  margin: 0;
+  margin-top: .5em;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  color: var(--kleur-wit);
+
+}
+
+
+
+
+
+
+/* *********
+/*Section 14*/
+/***********/
+section:nth-of-type(14) a {
+  font-family: "gothambold1";
+  font-size: 1em;
+  padding: 0.3em;
+}
+
 
 
 
@@ -695,10 +715,20 @@ section:nth-of-type(14) article section {
 /***********/
 /*Section 15*/
 /***********/
+section:nth-of-type(15) {
+  display: flex;
+  gap: 1em;
+  overflow-x: auto;
+}
+
 section:nth-of-type(15) a {
-  font-family: "gothambold1";
-  font-size: 1em;
-  padding: 0.3em;
+  display: block;
+  min-width: 10em;
+}
+
+section:nth-of-type(15) a img {
+  display: block;
+  width: 100%;
 }
 
 
@@ -708,21 +738,10 @@ section:nth-of-type(15) a {
 /***********/
 /*Section 16*/
 /***********/
-section:nth-of-type(16) {
-  display: flex;
-  gap: 1em;
-  overflow-x: auto;
-}
-
 section:nth-of-type(16) a {
-  display: block;
-  background-color: rosybrown;
-  min-width: 10em;
-}
-
-section:nth-of-type(16) a img {
-  display: block;
-  width: 100%;
+  font-family: "gothambold1";
+  font-size: 1em;
+  padding: 0.3em;
 }
 
 
@@ -732,10 +751,20 @@ section:nth-of-type(16) a img {
 /***********/
 /*Section 17*/
 /***********/
+section:nth-of-type(17) {
+  display: flex;
+  gap: 1em;
+  overflow-x: auto;
+}
+
 section:nth-of-type(17) a {
-  font-family: "gothambold1";
-  font-size: 1em;
-  padding: 0.3em;
+  display: block;
+  min-width: 10em;
+}
+
+section:nth-of-type(17) a img {
+  display: block;
+  width: 100%;
 }
 
 
@@ -745,21 +774,10 @@ section:nth-of-type(17) a {
 /***********/
 /*Section 18*/
 /***********/
-section:nth-of-type(18) {
-  display: flex;
-  gap: 1em;
-  overflow-x: auto;
-}
-
 section:nth-of-type(18) a {
-  display: block;
-  background-color: rosybrown;
-  min-width: 10em;
-}
-
-section:nth-of-type(18) a img {
-  display: block;
-  width: 100%;
+  font-family: "gothambold1";
+  font-size: 1em;
+  padding: 0.3em;
 }
 
 
@@ -769,32 +787,18 @@ section:nth-of-type(18) a img {
 /***********/
 /*Section 19*/
 /***********/
-section:nth-of-type(19) a {
-  font-family: "gothambold1";
-  font-size: 1em;
-  padding: 0.3em;
-}
-
-
-
-
-
-/***********/
-/*Section 20*/
-/***********/
-section:nth-of-type(20) {
+section:nth-of-type(19) {
   display: flex;
   gap: 1em;
   overflow-x: auto;
 }
 
-section:nth-of-type(20) a {
+section:nth-of-type(19) a {
   display: block;
-  background-color: rosybrown;
   min-width: 10em;
 }
 
-section:nth-of-type(20) a img {
+section:nth-of-type(19) a img {
   display: block;
   width: 100%;
 }
@@ -803,9 +807,9 @@ section:nth-of-type(20) a img {
 
 
 /***********/
-/*Section 21*/
+/*Section 20*/
 /***********/
-section:nth-of-type(21) a {
+section:nth-of-type(20) a {
   font-family: "gothambold1";
   font-size: 1em;
   padding: 0.3em;
@@ -816,21 +820,20 @@ section:nth-of-type(21) a {
 
 
 /***********/
-/*Section 22*/
+/*Section 21*/
 /***********/
-section:nth-of-type(22) {
+section:nth-of-type(21) {
   display: flex;
   gap: 1em;
   overflow-x: auto;
 }
 
-section:nth-of-type(22) a {
+section:nth-of-type(21) a {
   display: block;
-  background-color: rosybrown;
   min-width: 10em;
 }
 
-section:nth-of-type(22) a img {
+section:nth-of-type(21) a img {
   display: block;
   width: 100%;
 }
@@ -842,13 +845,8 @@ section:nth-of-type(22) a img {
 
 /*********************/
 /*section 7 met buttons*/
-/*********************/
-section:nth-of-type(7) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5em;
-}
+/* *******************/
+
 
 section button {
   border-radius: 1em;
@@ -879,6 +877,7 @@ p {
 
 a {
   text-decoration: none;
+  color: var(--kleur-wit);
 }
 
 
@@ -890,16 +889,6 @@ a {
 /* Ik heb een class gezet op de main 
 zodat ik de tweede pagina in dezelfde css kan stylen */
 
-
-
-/***********/
-/*ALGEMENE STIJL*/
-/***********/
-
-
-/********************/
-/*main terug link ->*/
-/********************/
 
 
 /***********/
@@ -921,13 +910,13 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
 }
 
 .tweedepagina>article section:nth-of-type(1) img:nth-child(1) {
-  width: 40%;
+  width: 30%;
   height: auto;
 
 }
 
 .tweedepagina>article section:nth-of-type(1) img:nth-child(2) {
-  width: 60%;
+  max-width: 50%;
   height: auto;
 }
 
@@ -1123,6 +1112,139 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
 
 /* ga je dat nog vervangen door content ipv een plaatje ????? */
 .tweedepagina>aside ul:nth-of-type(2) img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
   width: 100%;
   height: auto;
+}
+
+.tweedepagina>aside ul:nth-of-type(2) li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+  row-gap: .5em;
+}
+
+.tweedepagina>aside ul:nth-of-type(2) li h3,
+.tweedepagina>aside ul:nth-of-type(2) li p {
+  margin: 0;
+  padding: 0;
+}
+
+.tweedepagina>aside ul:nth-of-type(2) li p:last-of-type {
+  color: var(--gothambookkleur)
+}
+
+.tweedepagina>aside ul:nth-of-type(2) li h3 {
+  line-height: 1em;
+}
+
+.tweedepagina>aside ul:nth-of-type(2) li:nth-of-type(1) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+}
+
+.tweedepagina>aside ul:nth-of-type(2) li:nth-of-type(1) h3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+}
+
+.tweedepagina>aside ul:nth-of-type(2) li:nth-of-type(1) p:first-of-type {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  color: var(--animatiekleur);
+}
+
+.tweedepagina>aside ul:nth-of-type(2) li:nth-of-type(2) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+}
+
+.tweedepagina>aside ul:nth-of-type(2) li:nth-of-type(2) h3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+}
+
+.tweedepagina>aside ul:nth-of-type(2) li:nth-of-type(2) p:first-of-type {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  color: var(--animatiekleur);
+}
+
+.tweedepagina>aside ul:nth-of-type(2) li:nth-of-type(3) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+}
+
+.tweedepagina>aside ul:nth-of-type(2) li:nth-of-type(3) h3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+}
+
+.tweedepagina>aside ul:nth-of-type(2) li:nth-of-type(3) p:first-of-type {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  color: var(--animatiekleur);
+}
+
+.tweedepagina>aside ul:nth-of-type(2) li:nth-of-type(4) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+}
+
+.tweedepagina>aside ul:nth-of-type(2) li:nth-of-type(4) h3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+}
+
+.tweedepagina>aside ul:nth-of-type(2) li:nth-of-type(4) p:first-of-type {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  color: var(--animatiekleur);
+}
+
+
+@media(max-width:26em) {
+  .tweedepagina>aside ul:nth-of-type(2) li:nth-of-type(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+  }
+
+  .tweedepagina>aside ul:nth-of-type(2) li:nth-of-type(2) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+  }
+
+  .tweedepagina>aside ul:nth-of-type(2) li:nth-of-type(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+  }
+
+  .tweedepagina>aside ul:nth-of-type(2) li:nth-of-type(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+  }
+
+  .tweedepagina>aside ul:nth-of-type(2) img {
+    width: 60%;
+    height: auto;
+  }
 }
