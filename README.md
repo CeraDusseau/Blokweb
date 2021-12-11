@@ -257,7 +257,7 @@ Week 5, wat voor mij eigenlijk alleen een weekend is omdat ik maandag het gespre
 
 ### Screenshot(s)
 
-<img src="images/eindresultaatpagina1.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/einresultaatpagina1.png" width="375px" alt="omschrijving van de pagina">
 <img src="images/eindresultaat2.png" width="375px" alt="omschrijving van de pagina">
 
 </details>
