@@ -40,7 +40,7 @@ surface plane
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Home page
-<img src="images/Eerste_pagina.PNG" width="375px" alt="omschrijving van de pagina">
+<img src="imag/afbeeldingeerstepagina.png" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Informatie pagina
@@ -220,25 +220,24 @@ voor blur and central field lost vind ik het lastig iets te bedenken, buiten een
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Deze week ging het coderen best wel oke. Ik merkte dat ik het wat meer automatisch gaat en dat ik het leuk begin te vinden. Ik ben deze week met de laatste dingen bezig geweest om de puntjes op de I te zetten. Ik heb hier hulp bij gekregen van zowel Sanne als Sundous en ik ben heel blij dat beide me hebben geholpen.
 
 
 ### Agenda voor meeting
-samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+samen met je groepje opstellen
+student 1: "Ik zou graag door mijn html code willen gaan en kijken of ik ergens nog aanpassingen moet doen."
+student 2: "Ik heb bij mijn tweede pagina prince charming met een stuk tekst alleen ik krijg die tekst er niet naast."
+student 3: "Ik vind het lastig om iets te bedenken om te verbeteren voor de screen reader."
+
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
+- punt 1: De code ziet er netjes uit. Het is alleen netter als ik de sections in mijn eerste html pagina verander naar lists.
+- punt 2: Dat kan ik doen door een grid.
+- punt 3: Je kan de alts verduidelijken voor de screen reader.
 - ...
 
 </details>
@@ -253,11 +252,13 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Week 5, wat voor mij eigenlijk alleen een weekend is omdat ik maandag het gesprek heb, ervaar ik als gespannen! Het coderen is in de afgelopen weken voor mij van "vreselijk" naar "toch best wel leuk" gegaan. Dit weekend ben ik bezig geweest met de read me af te maken, de sections in mijn index.html pagina te veranderen naar lists, de alt bij de foto's aan te passen naar duidelijke teksten voor de screen readers en als laatst heb ik de afbeeldingen die ik in eerste instantie gebruikte voor sommige teksten veranderd in daadwerkelijke teksten.
+<img src="images/specifiekepagina.png" width="375px" alt="omschrijving van de pagina">
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
+<img src="images/eindresultaatpagina1.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/eindresultaat2.png" width="375px" alt="omschrijving van de pagina">
 
 </details>
 
@@ -272,8 +273,6 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+Ik heb geen code gekopierd van het internet. De enige code die ik heb gekopierd is van Sanne. Hij heeft mij geholpen met het maken van "afleveringen" en "andere keken ook".
 
 </details>

@@ -161,6 +161,7 @@ nav img:nth-of-type(4) {
 
 nav a.active {
   font-weight: bold;
+  color: red;
 }
 
 nav a:focus {
@@ -322,7 +323,7 @@ h3 {
   font-family: "Bebas Neue";
 }
 
-@media(min-width:30em) {
+@media(min-width:27em) {
   article img:nth-of-type(1) {
     width: 40em;
     height: auto;
@@ -333,6 +334,29 @@ h3 {
     font-size: 2em;
     line-height: .8em;
     padding: .3em;
+    font-family: "Bebas Neue";
+  }
+
+  article h3 {
+    color: white;
+    font-size: 1.4em;
+    line-height: .8em;
+    padding: .3em;
+    font-family: "Bebas Neue";
+  }
+}
+
+@media(min-width:37em) {
+  article img:nth-of-type(1) {
+    width: 60em;
+    height: auto;
+  }
+
+  article h2 {
+    color: white;
+    font-size: 2em;
+    line-height: .8em;
+    padding: .2em;
     font-family: "Bebas Neue";
   }
 
@@ -387,10 +411,8 @@ section.button div {
 
 
 
-
-
 /***********/
-/*Section 2*/
+/*Section 1*/
 /***********/
 section:first-of-type a {
   color: white;
@@ -400,28 +422,29 @@ section:first-of-type a {
   font-family: "Bebas Neue";
 }
 
-
-
-
-
-/***********/
-/*Section 3*/
-/***********/
-section:nth-of-type(2) {
+main ul {
   display: flex;
-  gap: 1em;
+  align-items: center;
+  gap: .5em;
   overflow-x: auto;
+  padding: 0;
 }
 
-section:nth-of-type(2) a {
+main ul li {
   display: block;
   min-width: 10em;
+  overflow-x: auto;
+
 }
 
-section:nth-of-type(2) a img {
+main ul li img {
   display: block;
   width: 100%;
+  height: auto;
 }
+
+
+
 
 
 
@@ -432,7 +455,6 @@ section:nth-of-type(2) a img {
 /***********/
 article:nth-of-type(2) section {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
   gap: .8em;
@@ -441,8 +463,8 @@ article:nth-of-type(2) section {
 
 article:nth-of-type(2) img {
   display: block;
-  width: 15.5em;
-  height: 8.6em;
+  width: 40%;
+  height: auto;
 }
 
 
@@ -463,29 +485,6 @@ section:nth-of-type(3) a {
 
 
 /***********/
-/*Section 4*/
-/***********/
-section:nth-of-type(4) {
-  display: flex;
-  gap: 1em;
-  overflow-x: auto;
-}
-
-section:nth-of-type(4) a {
-  display: block;
-  min-width: 10em;
-  color: var(--kleur-wit);
-}
-
-section:nth-of-type(4) a img {
-  display: block;
-  width: 100%;
-}
-
-
-
-
-/***********/
 /*Section 5*/
 /***********/
 section:nth-of-type(5) a {
@@ -498,37 +497,40 @@ section:nth-of-type(5) a {
 
 
 
-/***********/
-/*Section 6*/
-/***********/
-section:nth-of-type(6) {
-  display: flex;
-  gap: 1em;
-  overflow-x: auto;
-}
-
-
-
-section:nth-of-type(6) a {
-  display: block;
-  min-width: 10em;
-}
-
-
-section:nth-of-type(6) a img {
-  display: block;
-  width: 100%;
-}
-
-
-
-
 
 /***********/
 /*Section 7*/
 /***********/
-section:nth-of-type(7) a {
-  font-family: "gothambold1";
+section:nth-of-type(7) {
+  padding: .5em;
+}
+
+
+section:nth-of-type(7) ul li {
+  position: relative;
+  border-radius: 3em;
+}
+
+section:nth-of-type(7) ul li h3 {
+  position: absolute;
+  left: 6em;
+  top: 9em;
+}
+
+
+section:nth-of-type(7) ul li img {
+  border-radius: 3em;
+}
+
+
+section:nth-of-type(7) ul li p {
+  background-image: linear-gradient(rgb(0 0 0 / 0), black);
+  position: absolute;
+  right: 0;
+  left: 8em;
+  bottom: -1.5em;
+  color: white;
+  font-family: "Bebas Neue";
   font-size: 1em;
   padding: 0.3em;
 }
@@ -537,29 +539,6 @@ section:nth-of-type(7) a {
 
 
 
-/***********/
-/*Section 8*/
-/***********/
-section:nth-of-type(8) {
-  display: flex;
-  gap: 1em;
-  overflow-x: auto;
-}
-
-
-
-section:nth-of-type(8) a {
-  display: block;
-  min-width: 10em;
-
-
-}
-
-
-section:nth-of-type(8) a img {
-  display: block;
-  width: 100%;
-}
 
 
 
@@ -574,32 +553,6 @@ section:nth-of-type(9) a {
   padding: 0.3em;
 }
 
-
-
-
-
-/***********/
-/*Section 10*/
-/***********/
-section:nth-of-type(10) {
-  position: relative;
-  display: flex;
-  gap: 1em;
-  overflow-x: auto;
-}
-
-
-
-section:nth-of-type(10) a {
-  display: block;
-  min-width: 10em;
-}
-
-
-section:nth-of-type(10) a img {
-  display: block;
-  width: 100%;
-}
 
 
 
@@ -619,38 +572,8 @@ section:nth-of-type(11) a {
 
 
 /***********/
-/*Section 12*/
-/***********/
-section:nth-of-type(12) {
-  display: flex;
-  gap: 1em;
-  overflow-x: auto;
-}
-
-
-
-
-section:nth-of-type(12) a {
-  display: block;
-
-  min-width: 10em;
-
-
-}
-
-
-section:nth-of-type(12) a img {
-  display: block;
-  width: 100%;
-}
-
-
-
-
-/***********/
 /*artcle 3 section 13*/
 /***********/
-
 section:nth-of-type(13) ul {
   margin: 0;
   padding: 0;
@@ -712,28 +635,6 @@ section:nth-of-type(14) a {
 
 
 
-/***********/
-/*Section 15*/
-/***********/
-section:nth-of-type(15) {
-  display: flex;
-  gap: 1em;
-  overflow-x: auto;
-}
-
-section:nth-of-type(15) a {
-  display: block;
-  min-width: 10em;
-}
-
-section:nth-of-type(15) a img {
-  display: block;
-  width: 100%;
-}
-
-
-
-
 
 /***********/
 /*Section 16*/
@@ -744,28 +645,6 @@ section:nth-of-type(16) a {
   padding: 0.3em;
 }
 
-
-
-
-
-/***********/
-/*Section 17*/
-/***********/
-section:nth-of-type(17) {
-  display: flex;
-  gap: 1em;
-  overflow-x: auto;
-}
-
-section:nth-of-type(17) a {
-  display: block;
-  min-width: 10em;
-}
-
-section:nth-of-type(17) a img {
-  display: block;
-  width: 100%;
-}
 
 
 
@@ -785,28 +664,6 @@ section:nth-of-type(18) a {
 
 
 /***********/
-/*Section 19*/
-/***********/
-section:nth-of-type(19) {
-  display: flex;
-  gap: 1em;
-  overflow-x: auto;
-}
-
-section:nth-of-type(19) a {
-  display: block;
-  min-width: 10em;
-}
-
-section:nth-of-type(19) a img {
-  display: block;
-  width: 100%;
-}
-
-
-
-
-/***********/
 /*Section 20*/
 /***********/
 section:nth-of-type(20) a {
@@ -819,35 +676,10 @@ section:nth-of-type(20) a {
 
 
 
-/***********/
-/*Section 21*/
-/***********/
-section:nth-of-type(21) {
-  display: flex;
-  gap: 1em;
-  overflow-x: auto;
-}
-
-section:nth-of-type(21) a {
-  display: block;
-  min-width: 10em;
-}
-
-section:nth-of-type(21) a img {
-  display: block;
-  width: 100%;
-}
-
-
-
-
-
 
 /*********************/
 /*section 7 met buttons*/
 /* *******************/
-
-
 section button {
   border-radius: 1em;
   color: var(--basis-kleur-zwart);
@@ -876,6 +708,7 @@ p {
 }
 
 a {
+  padding: .3em;
   text-decoration: none;
   color: var(--kleur-wit);
 }
@@ -883,9 +716,9 @@ a {
 
 
 
-/*****************************/
+/*************************************************/
 /*tweede pagina*/
-/*****************************/
+/**************************************************/
 /* Ik heb een class gezet op de main 
 zodat ik de tweede pagina in dezelfde css kan stylen */
 
@@ -895,6 +728,7 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
 /*hele article*/
 /***********/
 .tweedepagina>article {
+  display: grid;
   padding: 1em;
 }
 
@@ -903,22 +737,53 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
 /********************/
 /*main article section 1*/
 /********************/
-.tweedepagina>article section:nth-of-type(1) {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
+.tweedepagina>article section:first-of-type {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: 1fr auto;
+  grid-row-start: 1;
+  gap: 1em;
 }
 
-.tweedepagina>article section:nth-of-type(1) img:nth-child(1) {
-  width: 30%;
-  height: auto;
+.tweedepagina>article section:first-of-type img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  width: auto;
+  height: 12em;
+
+
 
 }
 
-.tweedepagina>article section:nth-of-type(1) img:nth-child(2) {
-  max-width: 50%;
-  height: auto;
+.tweedepagina>article section:first-of-type h3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  margin: 0;
+  padding: 0;
 }
+
+.tweedepagina>article section:first-of-type p:first-of-type {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  margin: 0;
+  padding: 0;
+  color: var(--animatiekleur);
+}
+
+.tweedepagina>article section:first-of-type p:last-of-type {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  margin: 0;
+  padding: 0;
+  color: var(--gothambookkleur);
+}
+
+
 
 
 
@@ -927,7 +792,8 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
 /********************/
 /*main -> article 2*/
 /********************/
-.tweedepagina>article article p {
+.tweedepagina>article>p {
+  grid-row-start: 2;
   font-size: .9em;
   font-family: "gotham-book";
   margin: 1.3em;
@@ -1110,7 +976,7 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
   gap: 1em;
 }
 
-/* ga je dat nog vervangen door content ipv een plaatje ????? */
+
 .tweedepagina>aside ul:nth-of-type(2) img {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -1127,8 +993,8 @@ zodat ik de tweede pagina in dezelfde css kan stylen */
   row-gap: .5em;
 }
 
-.tweedepagina>aside ul:nth-of-type(2) li h3,
-.tweedepagina>aside ul:nth-of-type(2) li p {
+.tweedepagina>aside ul li h3,
+.tweedepagina>aside ul li p {
   margin: 0;
   padding: 0;
 }
