@@ -40,7 +40,7 @@ surface plane
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Home page
-<img src="imag/afbeeldingeerstepagina.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/afbeeldingeerstepagina.png" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Informatie pagina
@@ -253,7 +253,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Stand van zaken
 Week 5, wat voor mij eigenlijk alleen een weekend is omdat ik maandag het gesprek heb, ervaar ik als gespannen! Het coderen is in de afgelopen weken voor mij van "vreselijk" naar "toch best wel leuk" gegaan. Dit weekend ben ik bezig geweest met de read me af te maken, de sections in mijn index.html pagina te veranderen naar lists, de alt bij de foto's aan te passen naar duidelijke teksten voor de screen readers en als laatst heb ik de afbeeldingen die ik in eerste instantie gebruikte voor sommige teksten veranderd in daadwerkelijke teksten.
-<img src="images/specifiekepagina.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/eindresultaat2.png" width="375px" alt="omschrijving van de pagina">
 
 ### Screenshot(s)
 
